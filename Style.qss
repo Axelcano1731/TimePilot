@@ -1,0 +1,98 @@
+/* Estilos generales para la ventana */
+QWidget {
+    background-color: #D6E4F0; 
+    color: #333333;
+    font-family: "Arial", sans-serif;
+}
+
+/* Estilos para campos de entrada */
+QLineEdit {
+    background-color: #FFFFFF; 
+    color: #333333;
+    font-size: 14px;
+    border: 2px solid #5E81AC; 
+    border-radius: 5px;
+    padding: 5px;
+    /* Qt no soporta la propiedad 'transition', la eliminamos */
+}
+
+QLineEdit:focus {
+    border: 2px solid #4C6A92; 
+}
+
+QLineEdit::placeholder {
+    color: #7A8CA5;
+    font-style: italic;
+}
+
+/* Estilos para etiquetas */
+QLabel {
+    color: #2A3F5F; 
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilos para botones (generales) */
+QPushButton {
+    background-color: #5E81AC; 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    min-width: 150px;
+    min-height: 40px;
+    padding: 5px 10px;
+    /* Eliminado 'transition' para evitar advertencias */
+}
+
+QPushButton:hover {
+    background-color: #4C6A92; 
+}
+
+QPushButton:pressed {
+    background-color: #3B506D; 
+}
+
+QPushButton:disabled {
+    background-color: #B0C4DE;
+    color: #7A8CA5;
+}
+
+/* Estilos específicos para el botón de flecha atrás */
+QPushButton#backButton {
+    background-color: #EEF3F8;
+    color: #2A3F5F;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #5E81AC;
+    min-width: 18px;
+    min-height: 18px;
+    /* Se ajustan colores y borde para que sea visible y agradable */
+}
+
+QPushButton#backButton:hover {
+    background-color: #DAE7F2;
+}
+
+QPushButton#backButton:pressed {
+    background-color: #C9D9EC;
+}
+
+/* Estilos para menús desplegables */
+QMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #5E81AC;
+    border-radius: 4px;
+    padding: 5px;
+    color: #333333;
+}
+
+QMenu::item {
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+QMenu::item:selected {
+    background-color: #D6E4F0;
+}
